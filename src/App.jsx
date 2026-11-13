@@ -14,7 +14,7 @@ import ContentStudioPage from './pages/ContentStudioPage';
 import SmartSummarizerPage from './pages/SmartSummarizerPage';
 import SqlGeneratorPage from './pages/SqlGeneratorPage';
 import ReportIssuePage from './pages/ReportIssuePage';
-import CustomToast from './components/ui/CustomToast';
+import CustomToast from './components/UI/CustomToast';
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import toast from 'react-hot-toast';
-import { warningToast } from '../components/ui/CustomToast';
+import { warningToast } from '../components/UI/CustomToast';
 import { ArrowLeft, Eye, EyeOff, Check } from 'lucide-react';
 import { FcGoogle } from 'react-icons/fc';
 import { useGoogleLogin } from '@react-oauth/google';

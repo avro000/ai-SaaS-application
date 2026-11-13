@@ -5,7 +5,7 @@ import FooterSection from "../components/Landing/FooterSection";
 import { useAuth } from "../hooks/useAuth";
 import api from "../utils/api";
 import toast from "react-hot-toast";
-import { warningToast } from "../components/ui/CustomToast";
+import { warningToast } from "../components/UI/CustomToast";
 import {
   BookOpen,
   ArrowLeft,
