@@ -215,11 +215,15 @@ export default function ReportIssuePage() {
         formData.append("screenshot", screenshotFile);
       }
 
-      const token = localStorage.getItem("token");
+      const token = localStorage.getItem("token") || localStorage.getItem("nexusai_token");
       const headers = {};
       if (token) headers["Authorization"] = `Bearer ${token}`;
 
-      const res = await fetch("http://localhost:5000/api/reports", {
+      const apiUrl = import.meta.env.VITE_API_URL 
+        ? `${import.meta.env.VITE_API_URL}/api/reports` 
+        : "/api/reports";
+
+      const res = await fetch(apiUrl, {
         method: "POST",
         headers,
         body: formData
